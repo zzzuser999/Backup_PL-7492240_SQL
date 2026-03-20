@@ -1,0 +1,19 @@
+([server_principal_name]<>N'yyyy1' AND 
+[server_principal_name]<> N'yyyy2' AND 
+[server_principal_name]<> N'yyyy3' AND 
+[server_principal_name]<> N'yyyy4' AND 
+[server_principal_name]<> N'##MS_PolicyEventProcessingLogin##' AND 
+[server_principal_name]<> N'##MS_PolicySigningCertificate##' AND 
+[server_principal_name]<> N'##MS_PolicyTsqlExecutionLogin##' AND 
+[server_principal_name]<> N'##MS_SmoExtendedSigningCertificate##' AND
+[server_principal_name]<> N'##MS_SQLAuthenticatorCertificate##' AND 
+[server_principal_name]<> N'##MS_SQLEnableSystemAssemblyLoadingUser##' AND
+[server_principal_name]<> N'##MS_SQLReplicationSigningCertificate##' AND
+[server_principal_name]<> N'##MS_SQLResourceSigningCertificate##' AND
+[server_principal_name]<> N'##MS_SSISServerCleanupJobLogin##' AND 
+[server_principal_name]<> N'NT AUTHORITY\SYSTEM' AND 
+[server_principal_name]<> N'NT SERVICE\SQLWriter' AND 
+[server_principal_name]<> N'NT SERVICE\Winmgmt' AND 
+[server_principal_name]<>N'NT SERVICE\SQLTELEMETRY' AND [object_name]<>N'telemetry_xevents' AND NOT 
+[statement] like '%telemetry_xevents%' AND 
+([succeeded]=(1) OR [succeeded]=(0)))

@@ -1,0 +1,52 @@
+([server_principal_name]<>N'amd_odbc' AND 
+[server_principal_name]<> N'AMD_OData' AND 
+[server_principal_name]<> N'AMD_SaraNext' AND 
+[server_principal_name]<> N'ABB\Commvault' AND
+[server_principal_name]<> N'AMD_CompanyReview' AND
+[server_principal_name]<> N'CR_Reader' AND
+[server_principal_name]<> N'CR_Writer' AND
+[server_principal_name]<> N'AMD_SaraUpdater' AND
+[server_principal_name]<> N'DashboardUser' AND
+[server_principal_name]<> N'ABB\XE-ApexSQL-MD' AND
+[server_principal_name]<> N'AMERICAS\CAGEBAR' AND
+[server_principal_name]<> N'AMERICAS\MXCALAR1' AND
+[server_principal_name]<> N'ASIAPACIFIC\INANDSO' AND
+[server_principal_name]<> N'ASIAPACIFIC\INSACHO7' AND
+[server_principal_name]<> N'EUROPE\CHGAKVI' AND
+[server_principal_name]<> N'EUROPE\CHSAKAR1' AND
+[server_principal_name]<> N'EUROPE\PLAGCWI' AND
+[server_principal_name]<> N'EUROPE\PLARPUR1' AND
+[server_principal_name]<> N'EUROPE\PLKANOW6' AND
+[server_principal_name]<> N'EUROPE\PLKRKIE' AND
+[server_principal_name]<> N'EUROPE\PLLUGAL1' AND
+[server_principal_name]<> N'EUROPE\PLMAKUS1' AND
+[server_principal_name]<> N'EUROPE\PLMAMAR8' AND
+[server_principal_name]<> N'EUROPE\PLMAPAW1' AND
+[server_principal_name]<> N'EUROPE\PLMASWI6' AND
+[server_principal_name]<> N'EUROPE\PLMIWRO' AND
+[server_principal_name]<> N'EUROPE\PLMOPIE' AND
+[server_principal_name]<> N'EUROPE\PLPAMAC5' AND
+[server_principal_name]<> N'EUROPE\PLPIKOC' AND
+[server_principal_name]<> N'EUROPE\PLPIMAJ' AND
+[server_principal_name]<> N'EUROPE\PLSHPV' AND
+[server_principal_name]<> N'EUROPE\PLSHS1' AND
+[server_principal_name]<> N'EUROPE\PLSIP' AND
+[server_principal_name]<> N'EUROPE\PLWOBIJ' AND
+[server_principal_name]<> N'EUROPE\XE-S-AMDDB02P$' AND
+[server_principal_name]<> N'Nagios_reader' AND
+[server_principal_name]<> N'NMEA\GBRAKHU' AND
+[server_principal_name]<> N'##MS_PolicyEventProcessingLogin##' AND 
+[server_principal_name]<> N'##MS_PolicySigningCertificate##' AND 
+[server_principal_name]<> N'##MS_PolicyTsqlExecutionLogin##' AND 
+[server_principal_name]<> N'##MS_SmoExtendedSigningCertificate##' AND
+[server_principal_name]<> N'##MS_SQLAuthenticatorCertificate##' AND 
+[server_principal_name]<> N'##MS_SQLEnableSystemAssemblyLoadingUser##' AND
+[server_principal_name]<> N'##MS_SQLReplicationSigningCertificate##' AND
+[server_principal_name]<> N'##MS_SQLResourceSigningCertificate##' AND
+[server_principal_name]<> N'##MS_SSISServerCleanupJobLogin##' AND 
+[server_principal_name]<> N'NT AUTHORITY\SYSTEM' AND 
+[server_principal_name]<> N'NT SERVICE\SQLWriter' AND 
+[server_principal_name]<> N'NT SERVICE\Winmgmt' AND 
+[server_principal_name]<>N'NT SERVICE\SQLTELEMETRY' AND [object_name]<>N'telemetry_xevents' AND NOT 
+[statement] like '%telemetry_xevents%' AND 
+([succeeded]=(1) OR [succeeded]=(0)))
